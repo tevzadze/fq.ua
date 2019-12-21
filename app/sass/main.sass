@@ -72,14 +72,41 @@ b
 	z-index: -1
 .promo
 	background-color: white
-	
+
+.formats
+	.formatsText
+		padding: 40px
+		padding-left: 0px
+		width: 80%
+		font-size: 18px
+		font-weight: 500
+		p 
+			span
+				font-weight: 700
+				color: $accent
+			.formatsTextBig
+				width: 400px
+				position: absolute
+				top: 300px
+				left: 210px
+				z-index: 2
+				color: white
+				font-size: 120px		
+				font-weight: 400
+				line-height: 150px
+				font-weight: 600
+
+				
+	.formatsSlider
+		.item
+			img
+				filter: brightness(80%) contrast(80%)
+				&:hover
+					filter: brightness(100%) contrast(100%)
+
 
 
 		
-
-
-
-
 
 
 @import "media" // Always at the end
