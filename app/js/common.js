@@ -5,7 +5,7 @@ $(function() {
 $('.slide-one').owlCarousel({
     loop:false,
     margin:30,
-    nav:false,
+    nav:true,
     responsive:{
         0:{
             items:1
