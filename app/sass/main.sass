@@ -5,12 +5,11 @@
 body
 	background-color: #f7f6f4
 	font-family: 'Montserrat', sans-serif
-section
-	padding: 160px 40px	0px 40px
+
 h1
 	font-size: 116px
 	font-weight: 900
-	padding-top: 150px
+	padding-top: 100px
 
 h2
 	font-size: 30px
@@ -19,6 +18,8 @@ h2
 h3
 	font-size: 60px
 	font-weight: 900
+section
+	margin-top: 150px
 span
 	color: $accent
 	margin: 0px
@@ -44,39 +45,65 @@ p
 		font-weight: 700
 		font-size: 18px
 		color: $accent
-		border: 2px solid
-		border-color: $accent
+
+		background: url(../img/button.png)
+
+		background-size: 100% 100%
 		padding: 14px 55px
 		text-decoration: none
 		transition: all 0.2s ease
 		&:hover
-			color: white
-			background-color: $accent
-			transition: all 0.2s ease
+			background: $accent
+			border-radius: 1px $accent solid
+
+			color: #fff
+			transition: all 0.3s ease
 
 .header 
-	margin-top: 45px
-	padding-top: 0px	
+	margin-top: 30px
+	height: 100vh
 	.knopka
 		margin-top: 50px
+
 	p
 		font-size: 22px
 		font-weight: 500
+		line-height: 36px
+		span
+			font-weight: 900
+			font-size: 30px
 	nav
-		display: flex
-		justify-content: space-between
+		display: block
+		text-align: right
+		
 		a 
-			text-decoration: none		
+			text-decoration: none	
+			display: inline-block
+			margin-right: 20px
+			&:first-child
+				margin-right: 50px
+				i
+					font-size: 18px
+					
 			i
-				font-size: 25px				
+				font-size: 20px	
+				display: inline-block
+				padding-right: 5px
+			span
+				
+										
 			p
 				color: black
-				font-weight: 700
+				font-weight: 600
+				font-size: 17px
+				display: inline-block
+				transition: all 0.2s ease
 				&:hover
+					color: $accent
 .header_photo
 	position: absolute
 	left: 50%
-	margin-top: -460px
+	top: 140px
 	margin-left: -140px	
 	z-index: -1
 	display: flex
@@ -86,64 +113,71 @@ p
 		width: 150px
 		height: 400px
 		margin: 20px
+		background-position: center center
 	.animatedBlock1
-		background-image: url('../img/formatsSlider1.png')
-		animation: puls1 5s ease infinite
+		background-image: url('../img/header_block_1.png')
+		animation: puls1 3s ease infinite
+		background-position: center center
+
 	.animatedBlock2
 		background-color: #FFC312
 		animation: puls2 4s ease infinite
+		background-image: url('../img/header_block_2.png')
 	.animatedBlock3
-		height: 200px
+		height: 400px
 		background-color: #F79F1F
 		animation: puls3 6s ease infinite
+		background-image: url('../img/header_block_3.png')
 	.animatedBlock4
 		background-color: #EE5A24
-		animation: puls4 4s ease infinite
+		animation: puls4 10s ease infinite
+		background-image: url('../img/header_block_4.png')
 
 @keyframes puls1
 	0%
-		height: 200px
-		margin-top: 100px
+		height: 400px
+		margin-top: 40px
 	50%
 		height: 400px
 		margin-top: 20px
 	100%
-		height: 200px
-		margin-top: 100px
+		height: 400px
+		margin-top: 40px
 
 @keyframes puls2
 	0%
-		height: 350px
+		height: 400px
 		margin-top: 50px
 	50%
 		height: 400px
-		margin-top: 20px
+		margin-top: 0px
 	100%
-		height: 350px
+		height: 400px
 		margin-top: 50px
 
 @keyframes puls3
 	0%
-		margin-top: 250px
+		margin-top: 0px
 	50%
-		margin-top: 20px
+		margin-top: 100px
 	100%
-		margin-top: 250px
+		margin-top: 0px
 
 @keyframes puls4
 	0%
-		height: 400px
-		margin-top: 20px
+		height: 200px
+		margin-top: 70px
 	50%
-		height: 350px
-		margin-top: 50px
+		height: 200px
+		margin-top: 240px
 	100%
-		height: 400px
-		margin-top: 20px
+		height: 200px
+		margin-top: 70px
 	
 	
 
 .promo
+	margin-top: 30px
 	.promo_title
 		background: rgba(255, 255, 255, 0.9)
 		padding: 60px 0px
@@ -153,10 +187,11 @@ p
 			font-size: 41px
 		p
 			font-size: 24px
-		b 
+		span.span_sale
+			font-size: 28px
 			color: $accent
-			font-size: 32px
-			font-weight: 800	
+		.knopka
+			margin-top: 40px
 .promo_photo
 	position: absolute
 	left: 50%
@@ -166,6 +201,7 @@ p
 	width: 600px
 	height: 400px
 .formats
+	margin-top: 150px
 	h2
 		margin: 0px
 	.formatsText
@@ -262,14 +298,14 @@ p
 	.galerySlider
 		.owl-item.active 
        		transform: scale(0.9, 0.9)
-       		transition-duration: 1s
+       		transition-duration: 0.2s
        		p 
        			display: none
 		.owl-item
 			position: relative
 			z-index: 2
 			&:hover
-    			transform: scale(1.1, 1.1)
+    			transform: scale(1.0, 1.0)
     			z-index: 3
     			p 
     				display: block
