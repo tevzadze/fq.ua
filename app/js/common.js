@@ -13,7 +13,7 @@ $('.slide-one').owlCarousel({
         },
         
         576:{
-            items:3
+            items:2
 
         },
         1000:{
