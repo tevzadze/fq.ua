@@ -6,6 +6,7 @@ $('.slide-one').owlCarousel({
     loop:false,
     margin:40,
     nav:true,
+    mouseDrag:false,
     navText: ["<span>&#8592;</span>   ","<span>&#8594; </span> "],
     responsive:{
         0:{
@@ -21,6 +22,13 @@ $('.slide-one').owlCarousel({
         }
     }
 })
+$('.formatsSlider .owl-nav button').on('click' , function (argument) {
+    formatChange();
+});
+
+function formatChange (argument) {
+    $('.formatsSlider .active:nth-child(2)').fadeOut();
+};
 
 $('.slide-two').owlCarousel({
     autoplay: false,
