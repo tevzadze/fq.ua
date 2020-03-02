@@ -64,8 +64,6 @@ p
 	margin-top: 30px
 	height: 100vh
 	overflow: hidden
-	.logo
-		margin-top: -10px
 	.knopka
 		margin-top: 50px
 
@@ -221,66 +219,71 @@ p
 				top: 0px
 			.knopka
 				margin-top: 40px
-.formats
-	margin-top: 100px
+.formats2
 	h2
-		margin: 0px
-		margin-bottom: 30px
-	.formatsTextP
+		width: 100%
+		text-align: center
+		margin-bottom: 20px
+	.owl-nav
+		margin-right: 60px
+		margin-top: -20px
+	.knopka
+		text-align: center
+		margin-top: 7px
+	.format-item
+		width: 364px
+		height: auto
+		transform: scale(0.7) translateX(15px) translateY(450px)
+		overflow: hidden
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
 		
-	.formatsText
-		position: relative
-		z-index: 2
-		padding: 40px
-		padding-top: 0px
-		padding-left: 0px
-		width: 80%
-		font-size: 18px
-		font-weight: 500
-		p 
-			span
-				font-weight: 700
+		.small_text
+			position: absolute
+			bottom: 0px
+			font-size: 24px
+			color: #000
+			background: #fff
+			padding: 30px
+			padding-left: 40px
+			width: 80%
+			left: 0
+			margin-bottom: 0
+			opacity: 1
+
+		.text-block-format
+			display: none
+			h3
+				font-size: 16px
 				color: $accent
-			.formatsTextBig
-				width: 580px
-				position: absolute
-				top: 300px
-				left: 150px
-				color: white
-				font-size: 120px		
-				font-weight: 400
-				line-height: 150px
-				font-weight: 900
-				z-index: 9
-				pointer-events: none	
-				
-
-				
-	.formatsSlider
-		
-		.item
-			cursor: pointer
-			
+				text-align: center
+			.big_text
+				font-size: 12px
+				text-align: center
+		.img_format
+			width: 100%
+			height: 420px
 			img
-				filter: brightness(50%) contrast(50%)
-				padding: 40px 0px 0px 0px
-				transition: all 0.2s ease
-				height: 400px
-				margin-top: 50px
-				&:hover
-					filter: brightness(100%) contrast(100%)
-			.active
-				padding: 0px
-				margin-top: -20px
-				transform: scale(1.25, 1.1)
-				height: 450px
-		.knopka
-			position: relative
-
-			bottom: 10px
-	.active
-		filter: brightness(100%) contrast(100%) !important 
-		
+				width: 100%
+				height: 100%
+	.owl-item.active.center	
+	
+		.format-item
+			width: 364px
+			height: auto
+			transform: scale(1.2) translateX(10px) translateY(60px)
+			.img_format
+				height: 500px
+			.small_text
+				opacity: 0
+			.text-block-format
+				height: 170px
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
 .owl-carousel
 	// .owl-item
 	// 	&.active
@@ -320,6 +323,9 @@ p
 					color: #7f7e7e
 
 .offer
+	h2
+		text-align: center
+		
 	.offer_icon
 		margin-bottom: 40px
 		b
@@ -327,6 +333,9 @@ p
 			font-weight: 900
 			padding-left: 25px
 .uslugi
+	h2
+		text-align: center
+		
 	p
 		font-size: 18px
 	img
@@ -344,7 +353,7 @@ p
 		transition: all 2s ease
 	.h3_video
 		margin-top: 50px
-		line-height: 78px
+		line-height: 60px
 	.photo_offer
 		img
 			display: inline-block
@@ -362,8 +371,38 @@ p
 	.photo_block
 		margin-left: 50px
 		margin-bottom: 0px
+		margin-top: 20px
 			
 .preim
+	.why-we-block
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		width: 100%
+		.why-we-cart
+			width: 230px
+			height: 260px
+			box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.15)
+			padding: 25px
+			background: #fff
+			text-align: center
+			h3
+				font-size: 30px
+				margin-top: 10px
+				margin-bottom: 10px
+			&:not(:last-child)
+				margin-right: 50px
+			.why-we-cart-img
+				height: 60px
+				display: flex
+				justify-content: center
+				align-items: center
+			img
+				
+
+	h2
+		text-align: center
 	.card
 		height: 275px
 		font-size: 16px
@@ -378,6 +417,7 @@ p
 		p
 			margin: 0px
 .sale
+
 	.sale_title
 		background: rgba(255, 255, 255, 0.9)
 		padding: 60px 35px				
@@ -402,6 +442,9 @@ p
 
 
 .galery
+	h2
+		text-align: center
+		
 	.galerySlider
 		
 		.owl-item
@@ -446,6 +489,9 @@ p
 		margin: 0 auto
 
 .reviews
+	h2
+		text-align: center
+		
 	.reviewsSlider
 		.reviewsCard
 			margin: 20px
@@ -644,6 +690,9 @@ footer
 				padding-left: 5px
 				&::placeholder
 					font-size: 15px
+		button
+			p
+				padding-top: 15px
 /**
  * Fade-zoom animation for first dialog
  */

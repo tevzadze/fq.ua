@@ -14,17 +14,23 @@
 	.uslugi
 		.photo_block
 			margin-left: 0px
+			margin-top: 0px
 		.h3_video
 			line-height: 50px
 			margin-bottom: 20px
+			margin-top: 50px
 	.preim .card
 		font-size: 15px
 	.reviews .reviewsSlider .reviewsCard
 		height: 430px
 	.menu-list a
 		font-size: 25px
+	.preim .why-we-block .why-we-cart:not(:last-child)
+		margin-right: 30px
+
 // ≥992px
 +media-breakpoint-down(md)
+
 	.header
 		overflow: visible
 		height: auto
@@ -94,6 +100,15 @@
 		display: inline-block
 		margin-top: 0px
 		margin-left: 100px
+	.preim
+		.why-we-block
+			flex-direction: column
+			.why-we-cart
+				margin-right: 0px
+				&:not(:last-child)
+					margin-right: 0px
+					margin-bottom: 30px
+
 // ≥768px
 +media-breakpoint-down(sm)
 	.header
@@ -200,6 +215,7 @@
 			margin-bottom: 20px	
 	.galery .knopka
 		margin-right: 100%
+		margin-top: 10px
 	.reviews .reviewsSlider .reviewsCard .firstRow .ava
 		width: 55px
 		height: 55px
@@ -220,6 +236,35 @@
 		width: 240px
 		line-height: 18px
 		top: 225px
+	.formats2 
+		.owl-item.active.center .format-item
+			margin: auto
+			display: flex
+			flex-direction: column
+			flex-flow: wrap
+			.img_format
+				height: 150px
+			.text-block-format
+				order: 2
+		.owl-item
+			padding-bottom: 80px
+			.format-item
+				display: none
+				.img_format
+					overflow: hidden
+					display: flex
+					justify-content: center
+					align-items: center
+					img
+						height: 400px
+
+	.formats2 .owl-nav
+		margin-right: 0px
+	.formats2 .knopka
+		margin-right: 100%
+		margin-left: 30px
+				
+
 // ≥576px
 +media-breakpoint-down(xs)
 	.contacts .contactsData table td:nth-child(2n)
@@ -239,12 +284,15 @@
 		margin-top: -20px
 	.preim .card
 		padding: 20px 20px 0px 20px
-	.galery .knopka
-		margin-left: 20px
-		margin-top: -14px
-		a
-			padding: 10px 10px
-			display: block
+	.galery
+		.owl-carousel .owl-nav
+			margin-top: -30px
+		.knopka
+			margin-left: 20px
+			margin-top: 4px
+			a
+				padding: 10px 10px
+				display: block
 	.formats
 		.formatsSlider
 			.item
@@ -274,6 +322,27 @@
 		font-weight: 600
 	.menu-list
 		height: 90%
+	.formats2 .owl-item.active.center .format-item
+		width: 100%
+		transform: scale(1)
+		padding: 0px 20px
+		.text-block-format
+			height: auto
+			margin-top: 20px
+	.formats2 .owl-item
+		padding-bottom: 0px
+	.formats2 .owl-nav
+		margin-top: -50px
+		margin-right: 15px
+	.formats2 .format-item .text-block-format .big_text
+		font-size: 16px
+	.formats2 .knopka
+		margin: 0 auto
+		margin-top: 12px
+		margin-left: 20px
+		margin-right: 100%
+		a
+			padding: 10px 10px
 		
 /*==========  Mobile First  ==========*/
 

@@ -1,34 +1,27 @@
 $(function() {
-  $('.formatsTextP').fadeOut(0);
-  $('#item1').fadeIn(1000);
 
-$('.slide-one').owlCarousel({
-    loop:false,
-    margin:40,
+$('.formats-slider-2').owlCarousel({
+    autoplay: false,
+    loop:true,
+    margin:0,
+    center:true,
+    autoWidth:true,
     nav:true,
-    mouseDrag:false,
+    items:3,
     navText: ["<span>&#8592;</span>   ","<span>&#8594; </span> "],
     responsive:{
         0:{
-            items:2
+            items:1,
+             autoWidth:false,
+             animateOut: 'fadeOut',
         },
-        
-        576:{
-            items:2
-
+        577:{
+            items:3,
         },
-        1000:{
-            items:4
-        }
     }
-})
-$('.formatsSlider .owl-nav button').on('click' , function (argument) {
-    formatChange();
 });
 
-function formatChange (argument) {
-    $('.formatsSlider .active:nth-child(2)').fadeOut();
-};
+
 
 $('.slide-two').owlCarousel({
     autoplay: false,
@@ -75,17 +68,7 @@ $('.slide-three').owlCarousel({
 
 });
 
-$('.owl-prev').html('&#8594;');
 
-$('.item').on('click', function(e) {
-  $('.item').children().removeClass('active');
-  $('.formatsTextP').css({
-    "display" : "none",
-  
-});
-  $('#'+e.target.className).fadeIn(1000);
-  $(e.target).addClass('active');
-});
 
 $('.popup-with-zoom-anim').magnificPopup({
         type: 'inline',
