@@ -9,7 +9,7 @@ $message = "<p>Заявка</p>
 <p><strong>Name:</strong> $name</p>
 <p><strong>Phone:</strong> $phone</p>";
 
-mail( "pawtod22@gmail.com", "Заказ с сайта",
+mail( "dronych@funquest.com.ua", "Заказ с лендинга",
     $message, $headers );
 	header( "Location: /thankyou.html" );
 ?>
